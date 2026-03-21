@@ -1,9 +1,9 @@
-package com.example.demo.controller;
+package com.et.etclassic.controller;
 
-import com.example.demo.dto.MeterReadingRequest;
-import com.example.demo.dto.UpdateReadingRequest;
-import com.example.demo.model.EtMeterReading;
-import com.example.demo.service.MeterReadingService;
+import com.et.etclassic.dto.MeterReadingRequest;
+import com.et.etclassic.dto.UpdateReadingRequest;
+import com.et.etclassic.model.EtMeterReading;
+import com.et.etclassic.service.MeterReadingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

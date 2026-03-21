@@ -1,4 +1,4 @@
-package com.example.demo.dto;
+package com.et.etclassic.dto;
 
 public class UpdateReadingRequest {
     private Long id;

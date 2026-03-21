@@ -1,9 +1,9 @@
-package com.example.demo.controller;
+package com.et.etclassic.controller;
 
-import com.example.demo.dto.FlatRequest;
-import com.example.demo.dto.UpdateTenantRequest;
-import com.example.demo.model.EtFlat;
-import com.example.demo.service.FlatService;
+import com.et.etclassic.dto.FlatRequest;
+import com.et.etclassic.dto.UpdateTenantRequest;
+import com.et.etclassic.model.EtFlat;
+import com.et.etclassic.service.FlatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

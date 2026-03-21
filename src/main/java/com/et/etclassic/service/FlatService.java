@@ -1,9 +1,9 @@
-package com.example.demo.service;
+package com.et.etclassic.service;
 
-import com.example.demo.dto.FlatRequest;
-import com.example.demo.dto.UpdateTenantRequest;
-import com.example.demo.model.EtFlat;
-import com.example.demo.repository.EtFlatRepository;
+import com.et.etclassic.dto.FlatRequest;
+import com.et.etclassic.dto.UpdateTenantRequest;
+import com.et.etclassic.model.EtFlat;
+import com.et.etclassic.repository.EtFlatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

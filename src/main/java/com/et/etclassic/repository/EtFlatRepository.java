@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package com.et.etclassic.repository;
 
-import com.example.demo.model.EtFlat;
+import com.et.etclassic.model.EtFlat;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

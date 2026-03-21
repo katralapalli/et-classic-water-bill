@@ -1,11 +1,11 @@
-package com.example.demo.service;
+package com.et.etclassic.service;
 
-import com.example.demo.dto.MeterReadingRequest;
-import com.example.demo.dto.UpdateReadingRequest;
-import com.example.demo.model.EtFlat;
-import com.example.demo.model.EtMeterReading;
-import com.example.demo.repository.EtFlatRepository;
-import com.example.demo.repository.EtMeterReadingRepository;
+import com.et.etclassic.dto.MeterReadingRequest;
+import com.et.etclassic.dto.UpdateReadingRequest;
+import com.et.etclassic.model.EtFlat;
+import com.et.etclassic.model.EtMeterReading;
+import com.et.etclassic.repository.EtFlatRepository;
+import com.et.etclassic.repository.EtMeterReadingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

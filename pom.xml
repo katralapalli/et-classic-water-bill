@@ -8,11 +8,11 @@
 		<version>4.0.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<groupId>com.et</groupId>
+	<artifactId>et-classic-water-bill</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>et-classic-water-bill</name>
+	<description>ET Classic Monthly Water Bill Management System</description>
 	<url/>
 	<licenses>
 		<license/>

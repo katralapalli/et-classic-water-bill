@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package com.et.etclassic.repository;
 
-import com.example.demo.model.EtMeterReading;
+import com.et.etclassic.model.EtMeterReading;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
