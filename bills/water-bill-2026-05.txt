@@ -1,0 +1,196 @@
+Name & Flat # : Sai A101
+Reading(Curr,Prev,Difference): 929601, 920308, 9293 Liters
+Amount Payable: Rs.1639.39/- (139.39 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Anand A102
+Reading(Curr,Prev,Difference): 1430451, 1427279, 3172 Liters
+Amount Payable: Rs.1547.58/- (47.58 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Sridhar A103
+Reading(Curr,Prev,Difference): 1336142, 1327056, 9086 Liters
+Amount Payable: Rs.1636.29/- (136.29 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Babu Rao A104
+Reading(Curr,Prev,Difference): 1536069, 1519074, 16995 Liters
+Amount Payable: Rs.1754.93/- (254.92 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Rama Rao A201
+Reading(Curr,Prev,Difference): 856551, 848607, 7944 Liters
+Amount Payable: Rs.1619.16/- (119.16 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Pavan A202
+Reading(Curr,Prev,Difference): 646206, 638046, 8160 Liters
+Amount Payable: Rs.1622.40/- (122.4 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Syamala Aunty A203
+Reading(Curr,Prev,Difference): 352156, 342493, 9663 Liters
+Amount Payable: Rs.1644.95/- (144.94 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Vasu A204
+Reading(Curr,Prev,Difference): 586183, 585985, 198 Liters
+Amount Payable: Rs.1502.97/- (2.97 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Ashish A301
+Reading(Curr,Prev,Difference): 977381, 968444, 8937 Liters
+Amount Payable: Rs.1634.06/- (134.06 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Sunil A302
+Reading(Curr,Prev,Difference): 1528975, 1508107, 20868 Liters
+Amount Payable: Rs.1821.70/- (300 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Raja A303
+Reading(Curr,Prev,Difference): 1165262, 1150670, 14592 Liters
+Amount Payable: Rs.1718.88/- (218.88 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Naveen Kota A304
+Reading(Curr,Prev,Difference): 1180200, 1158743, 21457 Liters
+Amount Payable: Rs.1836.43/- (300 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Kalai Aunty A401
+Reading(Curr,Prev,Difference): 373762, 364855, 8907 Liters
+Amount Payable: Rs.1633.60/- (133.6 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Hari A402
+Reading(Curr,Prev,Difference): 652196, 647386, 4810 Liters
+Amount Payable: Rs.1572.15/- (72.15 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Siva A403
+Reading(Curr,Prev,Difference): 655949, 648457, 7492 Liters
+Amount Payable: Rs.1612.38/- (112.38 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Kishore A404
+Reading(Curr,Prev,Difference): 755115, 754611, 504 Liters
+Amount Payable: Rs.1507.56/- (7.56 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Subba Rao A501
+Reading(Curr,Prev,Difference): 1436136, 1411788, 24348 Liters
+Amount Payable: Rs.1908.70/- (300 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Satya A502
+Reading(Curr,Prev,Difference): 950329, 931876, 18453 Liters
+Amount Payable: Rs.1776.80/- (276.8 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Rajesh A503
+Reading(Curr,Prev,Difference): 1352977, 1340428, 12549 Liters
+Amount Payable: Rs.1688.24/- (188.23 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Mahesh A504
+Reading(Curr,Prev,Difference): 1279969, 1269038, 10931 Liters
+Amount Payable: Rs.1663.97/- (163.97 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Prasad Pokkuluri B101
+Reading(Curr,Prev,Difference): 1411807, 1394664, 17143 Liters
+Amount Payable: Rs.1757.15/- (257.14 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Srinivas B102
+Reading(Curr,Prev,Difference): 1868487, 1849149, 19338 Liters
+Amount Payable: Rs.1790.07/- (290.07 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Yashwanth B201
+Reading(Curr,Prev,Difference): 853865, 849803, 4062 Liters
+Amount Payable: Rs.1560.93/- (60.93 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Dileep B202
+Reading(Curr,Prev,Difference): 1261723, 1254167, 7556 Liters
+Amount Payable: Rs.1613.34/- (113.34 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Satyanarayana B301
+Reading(Curr,Prev,Difference): 1595576, 1582395, 13181 Liters
+Amount Payable: Rs.1697.72/- (197.72 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Suresh Guntupalli B302
+Reading(Curr,Prev,Difference): 1474094, 1445661, 28433 Liters
+Amount Payable: Rs.2010.83/- (300 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Sai B401
+Reading(Curr,Prev,Difference): 976617, 975953, 664 Liters
+Amount Payable: Rs.1509.96/- (9.96 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+
+Name & Flat # : Adhitya B402
+Reading(Curr,Prev,Difference): 1213369, 1206617, 6752 Liters
+Amount Payable: Rs.1601.28/- (101.28 + 1500)
+Note: Please pay your amount before 07-06-2026 to avoid penalty.
+
+────────────────────────────────────────────────────────────
+

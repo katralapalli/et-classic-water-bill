@@ -131,6 +131,9 @@ public class MeterReadingService {
         } else {
             charges = (20000 * 0.015) + (10000 * 0.025) + (10000 * 0.035) + (consumption - 40000) * 0.045;
         }
-        return Math.round(charges * 100.0) / 100.0;
+        double v = Math.round(charges * 100.0) / 100.0;
+
+        //return 1500 + v;
+        return v;
     }
 }

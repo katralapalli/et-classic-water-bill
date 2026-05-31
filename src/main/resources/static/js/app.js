@@ -288,55 +288,61 @@ document.getElementById('pastModal').addEventListener('click', e => {
 // ══════════════════════════════════════════════════════
 // GENERATE BILL (text file)
 // ══════════════════════════════════════════════════════
-function generateBill() {
+async function generateBill() {
     if (!allReadings.length) { showToast('No readings loaded.', 'danger'); return; }
-
-    const dueDate = getDueDate();
-    const lines   = [];
-
-    allReadings.forEach(item => {
-        const flat        = allFlats.find(f => f.flatNumber === item.flatNumber);
-        const name        = flat ? (flat.tenantName || flat.ownerName) : item.flatNumber;
-        const currReading = item.reading     || 0;
-        const consumption = item.consumption || 0;
-        const prevReading = currReading - consumption;
-        const charges     = item.charges     || 0;
-        const base        = Math.min(consumption, 20000) * 0.015;
-        const extra       = Math.max(0, charges - base);
-
-        lines.push(`Name & Flat # : ${name} ${item.flatNumber}`);
-        lines.push(`Reading(Curr,Prev,Difference): ${currReading}, ${prevReading}, ${consumption} Liters`);
-        lines.push(`Amount Payable: Rs.${charges.toFixed(2)}/- (${base.toFixed(2)} + ${extra.toFixed(2)})`);
-        lines.push(`Note: Please pay your amount before ${dueDate} to avoid penalty.`);
-        lines.push('');
-        lines.push('─'.repeat(60));
-        lines.push('');
-    });
-
-    downloadFile(lines.join('\n'), `water-bill-${getCurrentMonthStr()}.txt`, 'text/plain');
-    showToast('📄 Bill generated!', 'success');
+    const result = await saveFilesToServer();
+    if (result) showToast('📄 Bill saved to bills/ folder!', 'success');
 }
 
 // ══════════════════════════════════════════════════════
 // GENERATE CSV
 // ══════════════════════════════════════════════════════
-function generateCSV() {
-    if (!allReadings.length) { showToast('No readings loaded.', 'danger'); return; }
 
-    const header = ['flat_number', 'name', 'phone', 'pres_reading', 'prev_reading', 'consumption', 'charges'];
-    const rows   = allReadings.map(item => {
+// ── Build bill data payload ───────────────────────────────────────────────
+function buildBillData() {
+    const dueDate = getDueDate();
+    return allReadings.map(item => {
         const flat        = allFlats.find(f => f.flatNumber === item.flatNumber);
-        const name        = flat ? (flat.tenantName  || flat.ownerName)  : '';
+        flatNumber        = item.flatNumber;
+        const name        = flat ? (flat.tenantName  || flat.ownerName)  : item.flatNumber;
         const phone       = flat ? (flat.tenantPhone || flat.ownerPhone) : '';
-        const curr        = item.reading     || 0;
+        const currReading = item.reading     || 0;
         const consumption = item.consumption || 0;
-        const prev        = curr - consumption;
+        const prevReading = currReading - consumption;
         const charges     = item.charges     || 0;
-        return [item.flatNumber, `"${name}"`, phone, curr, prev, consumption, charges.toFixed(2)].join(',');
+        const base        = parseFloat((Math.min(consumption, 20000) * 0.015).toFixed(2));
+        const extra       = parseFloat((Math.max(0, charges - base)).toFixed(2));
+        return {
+            flatNumber, name, phone, currReading, prevReading,
+            consumption, charges: charges.toFixed(2),
+            base, extra, dueDate
+        };
     });
+}
 
-    downloadFile([header.join(','), ...rows].join('\n'), `water-bill-${getCurrentMonthStr()}.csv`, 'text/csv');
-    showToast('📥 CSV generated!', 'success');
+// ── Generate CSV ──────────────────────────────────────────────────────────
+async function generateCSV() {
+    if (!allReadings.length) { showToast('No readings loaded.', 'danger'); return; }
+    const result = await saveFilesToServer();
+    if (result) showToast('📥 CSV saved to bills/ folder!', 'success');
+}
+
+// ── Save both files to server ─────────────────────────────────────────────
+async function saveFilesToServer() {
+    try {
+        const res = await fetch(`${BASE_URL}/api/readings/generate-files`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(buildBillData())
+        });
+        if (!res.ok) throw new Error('Server error ' + res.status);
+        const result = await res.json();
+        console.log('Files saved:', result.billPath, result.csvPath);
+        return true;
+    } catch (e) {
+        showToast('❌ Failed to save files: ' + e.message, 'danger');
+        return false;
+    }
 }
 
 // ══════════════════════════════════════════════════════
@@ -452,7 +458,17 @@ function getCurrentMonthStr() {
 }
 
 function getDueDate() {
+
     const now = new Date();
-    const due = new Date(now.getFullYear(), now.getMonth() + 1, 8);
-    return due.toLocaleDateString('en-IN', { day: '2-digit', month: '2-digit', year: 'numeric' }).replace(/\//g, '-');
+    const due = new Date(now);
+
+    // Set the date to current date + 7
+    due.setDate(now.getDate() + 7);
+
+    return due.toLocaleDateString('en-IN', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+    }).replace(/\//g, '-');
 }
+
